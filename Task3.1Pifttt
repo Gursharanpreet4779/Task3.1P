@@ -6,7 +6,7 @@ const char* webhookUrl = "/trigger/Light/with/key/jUz964AsUOaGTE6JjAB2__MIXE9rZs
 
 WiFiClient client;
 
-// Pin connected to the LM393 digital output
+// Pin connected to the BH1750 
 const int LIGHT_SENSOR_PIN = A5;
 
 void setup() {
