@@ -1,12 +1,12 @@
 #include <WiFiNINA.h>
 
-char ssid[] = "Guri"; //WiFi SSID
-char pass[] = "123456"; //WiFi password
-const char* webhookUrl = "/trigger/Light/with/key/jUz964AsUOaGTE6JjAB2__MIXE9rZskOSnFgUYHv7h5" // URL path for IFTTT
+char ssid[] = "Redmi"; //WiFi SSID
+char pass[] = "12345678"; //WiFi password
+const char* webhookUrl = "/trigger/light/with/key/daiBqN3cPle_CKgWlkywU3O-tdiCAW5puOJLcs2qMht"; // URL path for IFTTT
 
 WiFiClient client;
 
-// Pin connected to the BH1750 
+// Pin connected to the LM393 digital output
 const int LIGHT_SENSOR_PIN = A5;
 
 void setup() {
@@ -48,7 +48,7 @@ void loop() {
     sendIFTTTNotification("Sunlight detected on the terrarium!");
   }
   
-  delay(60000);  // 60 seconds delay
+  delay(1000);  // 60 seconds delay
 }
 
 
